@@ -4,6 +4,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -29,10 +31,16 @@ public class EquippedFragment extends Fragment {
         ib3=(ImageButton)v.findViewById(R.id.ib3);
         ib4=(ImageButton)v.findViewById(R.id.ib4);
 
-
+        ib.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ib.setImageResource(R.drawable.armor2);
+            }
+        });
 
         return v;
     }
+
     public void setUserVisibleHint(boolean isVisibleToUser) {
         super.setUserVisibleHint(isVisibleToUser);
 
@@ -48,7 +56,8 @@ public class EquippedFragment extends Fragment {
     }
 
     public void onShowFragment() {
-        ib = (ImageButton) getView().findViewById(R.id.ib);
+
+
         //ib.setImageResource();
         //characterHP = (TextView) getView().findViewById(R.id.characterHP);
         //String text = "myHitPoints: " + CharacterData.getMyHitPoints() + "/" + CharacterData.getMyMaxHitPoints();

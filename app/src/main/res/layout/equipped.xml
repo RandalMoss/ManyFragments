@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@android:color/holo_blue_light"
-    android:id="@+id/character_fragment"
+    android:id="@+id/equipped"
     >
 
     <TextView
@@ -26,12 +26,6 @@
         android:id="@+id/characterPortrait"
 
         />
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/button"
-        android:text="Pass Data"
-        android:textSize="@dimen/text_size"/>
 
     <TextView
         android:layout_width="wrap_content"

@@ -36,7 +36,7 @@ public class CharacterData {
 
     public static Character characterSprite;
 
-    public static ArrayList<Sprite> loot;
+    public static ArrayList<Sprite> loot = new ArrayList<Sprite>();
 
     public static Weapon getWeapon2() {
         return weapon2;
@@ -63,6 +63,7 @@ public class CharacterData {
     }
 
     public static void addLoot(Sprite loot){
+        loot.getDrawableFromName();
         CharacterData.loot.add(loot);
     }
 

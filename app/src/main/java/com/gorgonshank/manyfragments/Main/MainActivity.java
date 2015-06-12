@@ -182,6 +182,7 @@ public class MainActivity extends FragmentActivity {
             }
         }
 
+
         public int getItemPosition(Object object) {
             return POSITION_NONE;
         }
